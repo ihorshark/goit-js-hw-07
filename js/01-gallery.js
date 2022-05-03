@@ -23,7 +23,6 @@ function createImagesMarkup (images) {
 
 galleryRef.innerHTML = createImagesMarkup(galleryItems);
 
-
 galleryRef.addEventListener('click', onGalleryItemClick);
 
 function onGalleryItemClick(event) {
