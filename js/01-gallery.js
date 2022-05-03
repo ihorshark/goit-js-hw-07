@@ -50,7 +50,6 @@ function showOriginalImage () {
     function onEscPress(event) {
         if (event.code === 'Escape') {
             instance.close();
-            window.removeEventListener('keydown', onEscPress)
         }
     }
 }

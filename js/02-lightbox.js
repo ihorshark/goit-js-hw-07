@@ -16,17 +16,11 @@ function createImagesMarkup (images) {
 
 galleryRef.innerHTML = createImagesMarkup(galleryItems);
 
-galleryRef.addEventListener('click', onGalleryItemClick);
-
-function onGalleryItemClick(event) {
-    event.preventDefault();
-    
-    var lightbox = new SimpleLightbox('.gallery a', {
-        captions: true,
-        captionSelector: 'img',
-        captionsData: 'alt',
-        captionPosition: 'bottom',
-        captionDelay: 250,
-    }
-    );
+var lightbox = new SimpleLightbox('.gallery a', {
+    captions: true,
+    captionSelector: 'img',
+    captionsData: 'alt',
+    captionPosition: 'bottom',
+    captionDelay: 250,
 }
+);
